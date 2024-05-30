@@ -7,9 +7,8 @@ import org.springframework.web.bind.annotation.*;
 
 import com.example.marvel_challenge.dto.MyPageable;
 import com.example.marvel_challenge.persistence.integration.marvel.dto.CharacterDto;
+import com.example.marvel_challenge.persistence.integration.marvel.dto.CharacterSpecificationDto;
 import com.example.marvel_challenge.services.CharacterService;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 
 @RestController
 @RequestMapping("/characters")
@@ -29,7 +28,8 @@ public class CharacterController {
             @RequestParam(defaultValue = "0") long offset,
             @RequestParam(defaultValue = "10") long limit) {
         MyPageable pageable = new MyPageable(offset, limit);
-        return ResponseEntity.ok(characterService.findAll(pageable, name, comics, series));
+        CharacterSpecificationDto characterSpecification = new CharacterSpecificationDto(name, comics, series);
+        return ResponseEntity.ok(characterService.findAll(pageable, characterSpecification));
     }
 
     @GetMapping("/{characterId}")
