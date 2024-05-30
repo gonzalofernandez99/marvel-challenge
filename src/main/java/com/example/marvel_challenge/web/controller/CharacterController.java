@@ -29,7 +29,7 @@ public class CharacterController {
             @RequestParam(defaultValue = "0") long offset,
             @RequestParam(defaultValue = "10") long limit) {
         MyPageable pageable = new MyPageable(offset, limit);
-        return ResponseEntity.ok(characterService.findAll(name, comics, series, pageable.offset(), pageable.limit()));
+        return ResponseEntity.ok(characterService.findAll(pageable, name, comics, series));
     }
 
     @GetMapping("/{characterId}")
