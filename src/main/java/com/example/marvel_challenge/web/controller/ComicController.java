@@ -22,7 +22,7 @@ public class ComicController {
         this.comicService = comicService;
     }
 
-    @GetMapping("")
+    @GetMapping
     public ResponseEntity<List<ComicDto>> findAll(
             @RequestParam(required = false) Long characterId,
             @RequestParam(defaultValue = "0") long offset,
