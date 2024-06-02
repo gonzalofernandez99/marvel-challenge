@@ -12,7 +12,7 @@ public class CharacterRepository {
         return null;
     }
 
-    public CharacterDto.CharacterInfoDto findInfoDto(long characterId) {
+    public CharacterDto.CharacterInfoDto findInfoById(long characterId) {
         return null;
     }
 }

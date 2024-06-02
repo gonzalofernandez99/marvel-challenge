@@ -23,6 +23,6 @@ public class CharacterServiceImpl implements CharacterService {
 
     @Override
     public CharacterDto.CharacterInfoDto findInfoDto(long characterId) {
-        return characterRepository.findInfoDto(characterId);
+        return characterRepository.findInfoById(characterId);
     }
 }
