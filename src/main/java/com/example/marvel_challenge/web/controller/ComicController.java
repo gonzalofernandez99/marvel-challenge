@@ -1,16 +1,17 @@
 package com.example.marvel_challenge.web.controller;
 
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import java.util.List;
+
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
 import com.example.marvel_challenge.dto.MyPageable;
 import com.example.marvel_challenge.persistence.integration.marvel.dto.ComicDto;
 import com.example.marvel_challenge.services.ComicService;
-
-import java.util.List;
 
 @RestController
 @RequestMapping("/comics")
@@ -21,7 +22,7 @@ public class ComicController {
     public ComicController(ComicService comicService) {
         this.comicService = comicService;
     }
-
+    // Method to get all comics
     @GetMapping
     public ResponseEntity<List<ComicDto>> findAll(
             @RequestParam(required = false) Long characterId,
