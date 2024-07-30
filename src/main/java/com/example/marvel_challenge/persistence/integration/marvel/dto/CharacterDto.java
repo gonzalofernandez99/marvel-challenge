@@ -1,13 +1,19 @@
 package com.example.marvel_challenge.persistence.integration.marvel.dto;
 
 public record CharacterDto(
-        long id,
+        Long id,
         String name,
         String description,
         String modified,
-        String resourceURI) {
+        String resourceURI
+)
+{
+
     public static record CharacterInfoDto(
             String imagePath,
-            String description) {
+            String description
+    )
+    {
     }
+
 }

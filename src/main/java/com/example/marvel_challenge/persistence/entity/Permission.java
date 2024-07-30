@@ -1,4 +1,4 @@
-package com.example.marvel_challenge.persistence.integration.marvel.entity;
+package com.example.marvel_challenge.persistence.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

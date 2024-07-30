@@ -1,7 +1,8 @@
 package com.example.marvel_challenge.mapper;
 
 import com.example.marvel_challenge.dto.GetUserInteractionLogDto;
-import com.example.marvel_challenge.persistence.integration.marvel.entity.UserInteractionLog;
+import com.example.marvel_challenge.persistence.entity.UserInteractionLog;
+
 
 /**
  * La clase `UserInteractionLogMapper` proporciona un método para mapear una entidad `UserInteractionLog` a un objeto `GetUserInteractionLogDto`.

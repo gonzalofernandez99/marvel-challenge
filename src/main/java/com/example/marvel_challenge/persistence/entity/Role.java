@@ -1,17 +1,8 @@
-package com.example.marvel_challenge.persistence.integration.marvel.entity;
-
-import java.util.List;
-
+package com.example.marvel_challenge.persistence.entity;
+import jakarta.persistence.*;
 import org.springframework.security.core.GrantedAuthority;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.EnumType;
-import jakarta.persistence.Enumerated;
-import jakarta.persistence.FetchType;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.OneToMany;
+import java.util.List;
 
 @Entity
 public class Role implements GrantedAuthority {
