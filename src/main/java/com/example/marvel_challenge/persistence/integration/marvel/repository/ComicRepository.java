@@ -8,7 +8,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Repository;
 
 import com.example.marvel_challenge.dto.MyPageable;
-import com.example.marvel_challenge.persistence.integration.marvel.MarvelApiConfig;
+import com.example.marvel_challenge.persistence.integration.marvel.MarvelAPIConfig;
 import com.example.marvel_challenge.persistence.integration.marvel.dto.ComicDto;
 import com.example.marvel_challenge.persistence.integration.marvel.mapper.ComicMapper;
 import com.example.marvel_challenge.services.HttpClientService;
@@ -23,7 +23,7 @@ import jakarta.annotation.PostConstruct;
 public class ComicRepository {
 
     @Autowired
-    private MarvelApiConfig marvelAPIConfig;
+    private MarvelAPIConfig marvelAPIConfig;
     @Autowired
     private HttpClientService httpClientService;
 

@@ -3,13 +3,11 @@ package com.example.marvel_challenge.services.impl;
 import com.example.marvel_challenge.dto.MyPageable;
 import com.example.marvel_challenge.persistence.integration.marvel.dto.CharacterDto;
 import com.example.marvel_challenge.persistence.integration.marvel.repository.CharacterRepository;
-
+import com.example.marvel_challenge.services.CharacterService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-
-import com.example.marvel_challenge.services.CharacterService;
 
 /**
  * El servicio `CharacterServiceImpl` proporciona métodos para interactuar con personajes de marvel.
@@ -46,3 +44,4 @@ public class CharacterServiceImpl implements CharacterService {
     }
 
 }
+

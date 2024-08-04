@@ -1,20 +1,20 @@
 package com.example.marvel_challenge.persistence.integration.marvel;
 
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
 
+import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * Configuración y gestión de las credenciales requeridas para interactuar con la API de Marvel.
  */
 @Component
-public class MarvelApiConfig {
+public class marvelAPIConfig {
 
     @Autowired
     @Qualifier("md5Encoder")
