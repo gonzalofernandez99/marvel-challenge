@@ -11,7 +11,7 @@ import org.springframework.stereotype.Repository;
 import org.springframework.util.StringUtils;
 
 import com.example.marvel_challenge.dto.MyPageable;
-import com.example.marvel_challenge.persistence.integration.marvel.MarvelAPIConfig;
+import com.example.marvel_challenge.persistence.integration.marvel.MarvelApiConfig;
 import com.example.marvel_challenge.persistence.integration.marvel.dto.CharacterDto;
 import com.example.marvel_challenge.persistence.integration.marvel.mapper.CharacterMapper;
 import com.example.marvel_challenge.services.HttpClientService;
@@ -26,7 +26,7 @@ import jakarta.annotation.PostConstruct;
 public class CharacterRepository {
 
     @Autowired
-    private MarvelAPIConfig marvelAPIConfig;
+    private MarvelApiConfig marvelAPIConfig;
     @Autowired
     private HttpClientService httpClientService;
 
